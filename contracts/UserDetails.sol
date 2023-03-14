@@ -179,7 +179,6 @@ contract UserDetails {
         string pickup;
         string dropoff;
         bool accept;
-        bool reject;
         string amount;
     }
 
@@ -207,7 +206,6 @@ contract UserDetails {
             pickup: _pickup,
             dropoff: _dropoff,
             accept: false,
-            reject: false,
             amount: _amount
         });
         rideSelectArray.push(newData);
@@ -258,10 +256,14 @@ contract UserDetails {
         for (uint256 i = 0; i < rideSelectArray.length; i++) {
             if (
                 rideSelectArray[i].userAddress == _userAddress &&
-                rideSelectArray[i].driverAddress == _driverAddress
+                rideSelectArray[i].driverAddress == _driverAddress &&
+                rideSelectArray[i].accept == false
             ) {
-                rideSelectArray[i].reject = true;
-                return;
+                rideSelectArray[i] = rideSelectArray[
+                    rideSelectArray.length - 1
+                ];
+                rideSelectArray.pop();
+                break;
             }
         }
     }

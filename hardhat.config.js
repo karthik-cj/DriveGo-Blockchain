@@ -7,8 +7,8 @@ module.exports = {
     localhost: {
       url: "http://127.0.0.1:8545",
     },
-    goerli: {
-      url: process.env.GOERLI_URL,
+    mumbai: {
+      url: process.env.MUMBAI_URL,
       accounts: [process.env.PRIVATE_KEY],
     },
   },
