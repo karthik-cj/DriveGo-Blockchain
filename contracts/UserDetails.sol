@@ -37,7 +37,7 @@ contract UserDetails {
         string location;
         string model;
         string vehicleNumber;
-        string rcBook;
+        string dob;
         string license;
         string vehicleName;
         string aadhar;
@@ -51,7 +51,7 @@ contract UserDetails {
         string memory _phoneNumber,
         string memory _model,
         string memory _vehicleNumber,
-        string memory _rcBook,
+        string memory _dob,
         string memory _license,
         string memory _vehicleName,
         string memory _aadhar
@@ -60,7 +60,7 @@ contract UserDetails {
         drivers[msg.sender].phoneNumber = _phoneNumber;
         drivers[msg.sender].model = _model;
         drivers[msg.sender].vehicleNumber = _vehicleNumber;
-        drivers[msg.sender].rcBook = _rcBook;
+        drivers[msg.sender].dob = _dob;
         drivers[msg.sender].license = _license;
         drivers[msg.sender].vehicleName = _vehicleName;
         drivers[msg.sender].aadhar = _aadhar;
@@ -90,7 +90,7 @@ contract UserDetails {
             driver.location,
             driver.model,
             driver.vehicleNumber,
-            driver.rcBook,
+            driver.dob,
             driver.license,
             driver.vehicleName,
             driver.aadhar,
@@ -123,7 +123,7 @@ contract UserDetails {
             driver.location,
             driver.model,
             driver.vehicleNumber,
-            driver.rcBook,
+            driver.dob,
             driver.license,
             driver.vehicleName,
             driver.aadhar,

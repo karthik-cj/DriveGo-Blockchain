@@ -2,8 +2,8 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "E:\\Projects\\Project\\drivego-blockchain\\contracts\\UserDetails.sol": {
-      "lastModificationDate": 1678812914889,
-      "contentHash": "7d2cebac691cef9198cb4ab493eb92b4",
+      "lastModificationDate": 1684389327756,
+      "contentHash": "e527cf7eba0a2e4710ec2b11bdea831a",
       "sourceName": "contracts/UserDetails.sol",
       "solcConfig": {
         "version": "0.8.17",
